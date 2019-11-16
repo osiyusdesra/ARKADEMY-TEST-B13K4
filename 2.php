@@ -2,6 +2,8 @@
 
 $username = "OSIYUSd";
 $pass = "111*ooo";
+
+function validasi ($username,$pass){
    if (preg_match ('/^[A-Z]{7}$/', $username)) {
        echo "Username benar";}
        else{
@@ -18,6 +20,9 @@ echo "<br>";
        else{
        echo "Password salah";
    }
+}
+
+   validasi ($username,$pass);
    
 
 ?>
